@@ -15,4 +15,7 @@ Then run the example with `sbt run`
 
 Confirm that the New Relic agent is running by checking the logs for "New Relic Agent Enabled"
 
+<img width="1119" alt="image" src="https://github.com/kaizen-solutions/zio-metrics-newrelic-example/assets/14280155/9ecca22d-160a-4507-b16e-aff603318fec">
+
+
 This requires a New Relic Ingest License Key.
