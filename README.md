@@ -1,8 +1,18 @@
 # ZIO Metrics Micrometer New Relic Example
 
-This is an example of how you can use ZIO Metrics Connectors (Micrometer) bridged to OpenTelemetry to send metrics to 
-New Relic by utilizing their [OpenTelemetry gRPC endpoint](https://docs.newrelic.com/docs/more-integrations/open-source-telemetry-integrations/opentelemetry/get-started/opentelemetry-set-up-your-app).
+This is an example of how you can use ZIO Metrics Connectors (Micrometer) bridged to the New Relic Java Agent to send 
+metrics to New Relic via custom events.
+
+## Running the example
+Set the following environment variables
+* `NEW_RELIC_LICENSE_KEY` to your New Relic license key
+* `NEW_RELIC_APP_NAME` to the name of your New Relic application
+
+Alternatively, you can set the equivalent settings in the `newrelic.yml` file in the root of the project. You can also 
+enable audit mode in the `newrelic.yml` file to see the metrics being sent to New Relic.
+
+Then run the example with `sbt run`
+
+Confirm that the New Relic agent is running by checking the logs for "New Relic Agent Enabled"
 
 This requires a New Relic Ingest License Key.
-
-Adapted from the [New Relic Micrometer shim example](https://github.com/newrelic/newrelic-opentelemetry-examples/tree/main/other-examples/java/micrometer-shim)
